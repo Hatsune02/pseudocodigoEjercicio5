@@ -1,0 +1,25 @@
+Algoritmo Ejercicio5
+	mujeresMayores <- 0
+	hombresMenores <- 0
+	edad <- 0
+	Sexo <- ''
+	Escribir 'Ingrese número de edades'
+	Leer numeroEdades
+	Para i<-1 Hasta numeroEdades Hacer
+		Escribir 'Ingrese la edad'
+		Leer edad
+		Escribir 'Ingrese el Sexo (M / F)'
+		Leer Sexo
+		Si (Sexo='F') Entonces
+			Si (edad>18) Entonces
+				mujeresMayores <- mujeresMayores+1
+			FinSi
+		FinSi
+		Si (Sexo='M') Entonces
+			Si (edad<18) Entonces
+				hombresMenores <- hombresMenores+1
+			FinSi
+		FinSi
+	FinPara
+	Escribir 'La cantidad de mujeres mayores de edad es de ',mujeresMayores,' y de hombres menores de edad es ',hombresMenores
+FinAlgoritmo
